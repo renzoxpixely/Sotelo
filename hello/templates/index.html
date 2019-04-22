@@ -1,0 +1,187 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+
+
+  
+
+
+
+
+  <link rel="icon" href="{% static 'core/img/core-img/favicon.ico'%}">
+        </div>
+    </section>
+    <!-- Welcome Area End -->
+
+
+
+    	<!--Inicio aplicaciones quiz-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=[Pixeles del mínimo ancho para visualizar bien la web]" />
+    <title>Quiz</title>
+    <link rel="stylesheet" type=text/css href="{% static 'style.css'%}">
+</head>
+<!--Comentarios para la página-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--Fin de comentarios-->
+<body>
+    <div class="grid">
+        <div id="quiz">
+            <h1>Conversaciones seductivas</h1>
+            <p style="text-align: left;">Mejorarás tus conversaciones.<br/>
+            Lograrás seducir con facilidad<br/>
+            Encuentra la secuencia correcta de respuestas y obten 5 puntos. </p>
+            
+            <p style="text-align:left;">Énvianos tu conversación seductiva</p>
+            <center>
+            <button onclick="window.location='enviar.html'" id="btn1"><spa id="choice1"></span>Enviar conversación</button>
+                <hr style="margin-bottom: 20px"></center>
+            <!--conversando-->
+             <center>
+              <hr style="margin-bottom: 20px">
+              <p style="text-align: center">María</p>
+              <img src="{% static 'img/menu01.jpg'%}" width="40%" height="40%">
+              <button onclick="window.location='quizmaria.html'" id="btn1"><spa id="choice1"></span>conversar</button>
+              <hr style="margin-bottom: 20px">
+             </center>
+             <center>
+              <hr style="margin-bottom: 20px">
+              <p style="text-align: center">Laura</p>
+              <img src="{% static 'img/menu02.jpg'%}" width="40%" height="40%">
+              <button onclick="window.location='quizlaura.html'" id="btn1"><spa id="choice1"></span>conversar</button>
+              <hr style="margin-bottom: 20px">
+            </center>
+             <center>
+              <hr style="margin-bottom: 20px">
+              <p style="text-align: center">Martha</p>
+              <img src="{% static 'img/menu03.jpg'%}" width="40%" height="40%">
+              <button onclick="window.location='quizmartha.html'" id="btn1"><spa id="choice1"></span>conversar</button>
+              <hr style="margin-bottom: 20px">
+             </center>
+            <footer>
+                <center>
+        <h2>Déjanos un comentario para saber como te fue</h2>
+        <div class="fb-comments" data-href="https://simuladordechat.webcindario.com/" data-width="100%" data-numposts="5"></div>
+        <hr style="margin-bottom: 20px">
+        <h2>Créditos</h2>
+        <div id="sfcrjt3r3se8wy1p6lfw1dzcnq1d6622elj"></div>
+        
+ 
+</center>
+<br>
+<p>Queremos tener un domninio propio y seguir mejorando el proyecto</p>
+<p>Donacion por PayPal en el siguiente enlace:</p>
+<a href="https://www.paypal.me/solucionescoder">https://www.paypal.me/solucionescoder</a>
+
+
+            </footer>
+        </div>
+    </div>
+    <br>   
+
+
+    <div class="gridq">
+        <div id="quiz">
+            <h1>Conversando con Laura</h1>
+            <center>
+                <img src="{% static 'img/menu02.jpg'%}" width="40%" height="40%">
+            </center>
+            <h1>Escenario billar.</h1>
+            <hr style="margin-bottom: 20px">
+
+            <p id="question"></p>
+            <hr style="margin-bottom: 20px">
+            <center>
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+            </div>
+            </center>
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Pregunta x de y</p>
+            </footer>
+        </div>
+    </div>
+
+
+        <div class="gridq">
+        <div id="quiz">
+            <h1>Conversando con María</h1>
+            <center>
+                <img src="{% static 'img/menu01.jpg'%}" width="40%" height="40%">
+            </center>
+            <h1>Terapia para una fisioterapia.</h1>
+            <hr style="margin-bottom: 20px">
+
+            <p id="question"></p>
+            <hr style="margin-bottom: 20px">
+            <center>
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+            </div>
+            </center>
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Pregunta x de y</p>
+            </footer>
+        </div>
+    </div>
+
+
+    <div class="gridq">
+        <div id="quiz">
+            <h1>Conversando con Martha</h1>
+            <center>
+                <img src="{% static 'img/menu03.jpg'%}" width="40%" height="40%">
+            </center>
+            <h1>Escenario sala de espera hospital y niño jugando frente a ella.</h1>
+            <hr style="margin-bottom: 20px">
+
+            <p id="question"></p>
+            <hr style="margin-bottom: 20px">
+            <center>
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+            </div>
+            </center>
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Pregunta x de y</p>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <br>
+
+<script src="{% static 'quiz.js'%}"></script>
+<script src="{% static 'question.js'%}"></script>
+<script src="{% static 'app.js'%}"></script>
+</body>
+</html>
+<!--Fin aplicacion quiz-->
+
+{% endblock %}
