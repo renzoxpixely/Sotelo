@@ -43,3 +43,11 @@ $ heroku local
 
 ## Integrantes
 
+
+##Link desplegado 
+link: https://djangoschooll.herokuapp.com
+video:https://www.youtube.com/watch?v=ePv5FJEb9BU
+
+##Administracion django
+https://djangoschooll.herokuapp.com/admin/
+usuario: admin contraseña: admin123456
